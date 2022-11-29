@@ -6,7 +6,7 @@ const header = {
 
 const about = {
   // all the properties are optional - can be left empty or deleted
-  heading: 'Convert JPG to PDF',
+  heading: '',
 }
 
 const tags = [

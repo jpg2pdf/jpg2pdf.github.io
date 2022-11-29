@@ -122,7 +122,10 @@ function Jpg2Pdf() {
 
       // Uploaded images are read and the app state is updated.
       const fileToImagePromises = fileArray.map(fileToImageURL);
-      Promise.all(fileToImagePromises).then(setUploadedImages);
+      Promise.all(fileToImagePromises).then((images) => {
+        const combinedImages = uploadedImages.concat(images);
+        setUploadedImages(combinedImages);
+      });
   };
 
   const cleanUpUploadedImages = () => {
@@ -155,9 +158,18 @@ function Jpg2Pdf() {
 
       {/* Buttons for uploading images and generating a PDF */}
       <div className="buttons-container">
+        {/* Clears images */}
+        <button
+          onClick={cleanUpUploadedImages}
+          className="button"
+          disabled={uploadedImages.length === 0}
+        >
+          Clear
+        </button>
+
         {/* Uploads images */}
         <label htmlFor="file-input">
-          <span className="button">Upload images</span>
+          <span className="button">Add</span>
           <input
             id="file-input"
             type="file"
@@ -175,7 +187,7 @@ function Jpg2Pdf() {
           className="button"
           disabled={uploadedImages.length === 0}
         >
-          Generate PDF
+          Generate
         </button>
       </div>
     </>
