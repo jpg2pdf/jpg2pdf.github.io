@@ -71,3 +71,7 @@
 .button:first-child {
     margin-right: 16px;
 }
+
+.h1main {
+    font-size: 20px;
+}

@@ -145,6 +145,7 @@ function Jpg2Pdf() {
 
   return (
     <>
+      <h1 className="h1main">JPG to PDF Free Converter</h1>
       {/* Overview of uploaded images */}
       <div className="images-container">
         {uploadedImages.length > 0 ? (
@@ -190,6 +191,13 @@ function Jpg2Pdf() {
           Generate
         </button>
       </div>
+      <br/>
+      <div>
+        <p>JPG2PDF is a free in-browser converter for converting your JPG images into PDF documents. It's simple, just add images and click generate.</p>
+      </div>
+      <br/>
+      {/* <div className="share__btn__container"> </div> */}
+      <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" className="twitter-share-button" data-show-count="false" target="_blank">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </>
   );
 }
