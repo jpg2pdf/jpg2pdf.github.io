@@ -196,7 +196,6 @@ function Jpg2Pdf() {
         <p>JPG2PDF is a free in-browser converter for converting your JPG images into PDF documents. It's simple, just add images and click generate.</p>
       </div>
       <br/>
-      {/* <div className="share__btn__container"> </div> */}
       <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" className="twitter-share-button" data-show-count="false" target="_blank">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </>
   );
