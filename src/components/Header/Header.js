@@ -7,7 +7,7 @@ const Header = () => {
 
   return (
     <header className='header center'>
-      <h3>
+      <h1>
         {homepage ? (
           <a href={homepage} className='link'>
             {title}
@@ -15,7 +15,7 @@ const Header = () => {
         ) : (
           title
         )}
-      </h3>
+      </h1>
       <Navbar />
     </header>
   )
