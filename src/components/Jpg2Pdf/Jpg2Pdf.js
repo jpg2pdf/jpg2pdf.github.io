@@ -145,6 +145,7 @@ function Jpg2Pdf() {
 
   return (
     <>
+      <iframe data-aa='2392316' src='//ad.a-ads.com/2392316?size=320x100' style='width:320px; height:100px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
       <h2 className="h1main">JPG to PDF Free Converter</h2>
       {/* Overview of uploaded images */}
       <div className="images-container">
